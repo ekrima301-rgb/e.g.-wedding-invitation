@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف أحمد وشهد</title>
+    
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="نتشرف بدعوتكم لحضور حفل زفاف أحمد وشهد - يوم الأحد 21 يونيو 2026">
+    <meta property="og:title" content="دعوة زفاف أحمد وشهد">
+    <meta property="og:description" content="نتشرف بحضوركم ومشاركتنا فرحتنا - اضغط لمشاهدة التفاصيل">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gold-ring"></div>
+            <p>جاري التحميل...</p>
+        </div>
+    </div>
+
+    <!-- Music Button -->
+    <button id="music-toggle" aria-label="Toggle Music">
+        <span class="icon">🎵</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Envelope Section -->
+    <section id="envelope-section">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="envelope-front"></div>
+                <div class="envelope-top"></div>
+                <div class="envelope-back"></div>
+                <div class="letter">
+                    <div class="letter-content">
+                        <h2>لديك دعوة خاصة</h2>
+                        <button id="open-btn">فتح الدعوة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden initially) -->
+    <main id="main-content" class="hidden">
+        <div class="particles-container" id="particles"></div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-inner fade-in">
+                <div class="ornament">✨</div>
+                <h1>أحمد <span class="heart">♥</span> شهد</h1>
+                <p class="invite-msg">بكل الحب والسرور نتشرف بدعوتكم لحضور حفل زفافنا</p>
+                <div class="date-display">الأحد، 21 يونيو 2026</div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section fade-in">
+            <h3>العد التنازلي للليلة العمر</h3>
+            <div id="countdown">
+                <div class="time-unit"><span id="days">00</span><label>يوم</label></div>
+                <div class="time-unit"><span id="hours">00</span><label>ساعة</label></div>
+                <div class="time-unit"><span id="minutes">00</span><label>دقيقة</label></div>
+                <div class="time-unit"><span id="seconds">00</span><label>ثانية</label></div>
+            </div>
+        </section>
+
+        <!-- Venue Section -->
+        <section class="venue-section fade-in">
+            <div class="venue-card">
+                <h3>مكان الحفل</h3>
+                <p class="venue-name">دار ضباط النقل</p>
+                <p class="venue-address">أمام قصر محمد علي</p>
+                <p class="venue-time">الساعة 8:00 مساءً</p>
+                <a href="https://maps.app.goo.gl/TPpKDPkhik2LRzKX9" target="_blank" class="btn-gold">عرض الموقع على الخريطة</a>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section class="calendar-section fade-in">
+            <button id="add-to-calendar" class="btn-outline">حفظ الموعد في التقويم</button>
+        </section>
+
+        <!-- QR Code Section -->
+        <section class="qr-section fade-in">
+            <p>امسح الكود لمشاركة الدعوة</p>
+            <div id="qr-code"></div>
+        </section>
+
+        <!-- Share Section -->
+        <section class="share-section fade-in">
+            <button id="whatsapp-share" class="btn-whatsapp">
+                مشاركة عبر واتساب
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="fade-in">
+            <p class="footer-msg">نتشرف بحضوركم ومشاركتنا فرحتنا</p>
+            <div class="ornament-bottom">🕊️</div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
