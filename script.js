@@ -8,12 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgMusic = document.getElementById('bg-music');
     
     // Hide loading screen
-    window.addEventListener('load', () => {
+    const hideLoading = () => {
         setTimeout(() => {
             loadingScreen.style.opacity = '0';
             setTimeout(() => loadingScreen.style.display = 'none', 500);
         }, 1000);
-    });
+    };
+
+    if (document.readyState === 'complete') {
+        hideLoading();
+    } else {
+        window.addEventListener('load', hideLoading);
+    }
 
     // Envelope opening logic
     openBtn.addEventListener('click', () => {
